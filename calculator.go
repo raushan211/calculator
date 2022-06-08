@@ -10,11 +10,10 @@ func main() {
 	var num2 int
 	fmt.Scanln(&num2)
 	fmt.Println("operation: ")
-	var third string
-	fmt.Scanln(&third)
+	var operation string
+	fmt.Scanln(&operation)
 
 	result := 0
-	operation := "+"
 	if operation == "+" {
 		result = num1 + num2
 	}
