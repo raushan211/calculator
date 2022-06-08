@@ -26,6 +26,9 @@ func main() {
 			return
 		}
 		result = num1 / num2
+	} else {
+		fmt.Println("bad req")
+		return
 	}
 
 	fmt.Println("The result is: ", result)
