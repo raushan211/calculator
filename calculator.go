@@ -13,18 +13,20 @@ func main() {
 	var operation string
 	fmt.Scanln(&operation)
 
-	result := 0
+	var result int
 	if operation == "+" {
 		result = num1 + num2
-	}
-	if operation == "-" {
+	} else if operation == "-" {
 		result = num1 - num2
-	}
-	if operation == "/" {
+	} else if operation == "*" {
+		result = num1 * num2
+	} else if operation == "/" {
+		if num2 == 0 {
+			fmt.Println("no.cannot be divided")
+			return
+		}
 		result = num1 / num2
 	}
-	if operation == "*" {
-		result = num1 * num2
-	}
+
 	fmt.Println("The result is: ", result)
 }
